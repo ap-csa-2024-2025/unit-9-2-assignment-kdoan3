@@ -21,10 +21,10 @@ public class SpecialtyCoffee extends Coffee
   }
 
   // Method override of Coffee getPrice
+  //return 1.5x the regular coffee price
   public double getPrice()
   {
-    // we will edit in class
-    return 0.0;
+    return super.getPrice() * 1.5;
   }
 
   // Method override of Coffee toString
@@ -38,6 +38,8 @@ public class SpecialtyCoffee extends Coffee
   // and a SpecialtyCoffee using both getPrice methods
   public void printPriceComparison()
   {
-
+    System.out.println("A regular coffee costs " + super.getPrice());
+    System.out.println("Thiscoffee costs " + this.getPrice(););
+    System.out.println("This coffee costs " getPrice());
   }
 }
