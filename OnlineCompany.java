@@ -5,14 +5,14 @@ public class OnlineCompany extends Company
 	// An online company's address is its webaddress
 	public OnlineCompany(String name, String webAddress)
 	{
-
+		super(name, webAddress);
 	}
 
 	// Return the website address, since the address is
 	// reinterpreted as the web address here.
 	public String address()
 	{
-		return null;
+		return this.webAddress;
 	}
 
 	/** Return a String of the form
@@ -28,6 +28,6 @@ public class OnlineCompany extends Company
 
 	public String toString()
 	{
-		return null;
+		return super.getName() + this.wedAddress;
 	}
 }
